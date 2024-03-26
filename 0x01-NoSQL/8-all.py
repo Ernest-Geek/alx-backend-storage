@@ -11,5 +11,5 @@ def list_all(mongo_collection):
     """
     if not mongo_collection:
         return []
-    documents = mongo.collection.find()
+    documents = mongo_collection.find()
     return [post for post in documents]
