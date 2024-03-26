@@ -2,6 +2,7 @@
 """ A python function that inserts
 a new collection
 """
+import pymongo
 
 
 def insert_school(mongo_collection, **kwargs):
