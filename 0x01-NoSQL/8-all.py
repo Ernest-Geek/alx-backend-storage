@@ -12,4 +12,4 @@ def list_all(mongo_collection):
     if not mongo_collection:
         return []
     documents = mongo.collection.find()
-    return [post for posts in document]
+    return [post for post in documents]
