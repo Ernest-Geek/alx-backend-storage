@@ -1,4 +1,4 @@
-// A script that adds a new attribute to a document
-db.school.insert({ name: "Holberton School" }, {
-    $set: { address: “972 Mission street” }
+// Update multiple documents
+db.school.updateMany({ name: "Holberton School" }, { 
+    $set: { address: "972 Mission street"}
 })
