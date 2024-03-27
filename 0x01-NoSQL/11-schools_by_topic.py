@@ -9,5 +9,5 @@ def schools_by_topic(mongo_collection, topic):
     """
     find by specific value
     """
-    return mongo_collection.find({"topics": {"$in": [topic]})
+    return mongo_collection.find({"topics": {"$in": [topic]}})
 
