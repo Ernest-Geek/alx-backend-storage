@@ -9,5 +9,5 @@ def insert_school(mongo_collection, **kwargs):
     """
     Insert a list into a document
     """
-    data = mongo_collection.insertOne(**kwargs)
+    data = mongo_collection.insert_one(**kwargs)
     return data.inserted_id
