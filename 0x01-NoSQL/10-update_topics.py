@@ -10,7 +10,7 @@ def update_topics(mongo_collection, name, topics):
     update document with a specific attr: value
     """
     return mongo_collection.updateMany({
-        "name": name
+            "name": name
         },
         {
             "$set": {
